@@ -4,7 +4,7 @@ import axios from "axios";
 export default () => {
   const [data, setData] = useState<unknown[]>([]);
   const [error, setError] = useState<unknown>(null);
-  const [isLoading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     (async () => {
@@ -19,5 +19,5 @@ export default () => {
       }
     })();
   }, []);
-  return { data, error, isLoading };
+  return { data, error, loading };
 };
