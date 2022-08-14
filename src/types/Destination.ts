@@ -6,4 +6,6 @@ export type Destination = {
   arriveDate: string;
   departDate: string;
   sites?: Site[];
+  transportation?: any;
+  accommodations?: any;
 };
